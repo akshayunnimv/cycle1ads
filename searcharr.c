@@ -34,14 +34,15 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    printf("Enter the search key : ");
-    scanf("%d", &key);
+   
 
     while (choice != 3){
         printf("\nEnter the choice 1 - Linear search, 2 - Binary search, 3 - Exit \n");
         scanf("%d", &choice);
         switch (choice){
         case 1:
+             printf("Enter the search key : ");
+             scanf("%d", &key);
             result = linearSearch(arr, size, key);
             if (result == -1){
                 printf("key is not found\n");
@@ -51,6 +52,8 @@ int main(){
             }
             break;
         case 2:
+             printf("Enter the search key : ");
+             scanf("%d", &key);
             result = binarySearch(arr, key, 0, size - 1);
             if (result == -1)
                 printf("Not found\n");
