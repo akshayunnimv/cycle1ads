@@ -124,7 +124,7 @@ void sort()
 {
     int temp;
     for (i = 0; i < n - 1; i++)
-    {AKSHAY UNNI M V
+  
         for (j = 0; j < n - i - 1; j++)
         {
             if (a[j] > a[j + 1])
